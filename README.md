@@ -61,3 +61,22 @@ This program extracts a ZIP archive while recreating symbolic links and restorin
    ```bash
    git clone https://github.com/your-username/java-zip-posix-howto.git
    cd java-zip-posix-howto
+   ```
+2. **Compile the Java Files**:
+   ```bash
+   javac ZipPosixExample.java ZipExtractExample.java
+   ```
+3. **Create a Zip Archive**:
+   ```bash
+   java ZipPosixExample /path/to/source /path/to/archive.zip
+   ```
+4. **Extract Zip File**:
+   ```bash
+   java ZipExtractExample /path/to/archive.zip /path/to/destination
+   ```
+5. **Verify the Results**:
+   
+   Check the extracted files to ensure permissions and symbolic links are preserved.
+   ```bash
+   ls -l /path/to/destination
+   ```
